@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+    background: center url("5026563.jpg") ;
+}
+
+h1{
+    margin-top: 50px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Karla', sans-serif;
+    font-weight: lighter;
+    color: brown;
+    font-style: italic;
+    border: 10px solid black;
+    background-image: url(C:\Users\amals\OneDrive\Desktop\mywebsite\webimg\backgrungtitlle) ;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+
+@keyframes slide_animation{
+    0% {left:-2400px;}
+    10% {left:-1200px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: -1200px;}
+    90% {left: -1200px;}
+    100% {left:-2400px;}
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:-2400px;}
+    10% {left:-1200px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: -1200px;}
+    90% {left: -1200px;}
+    100% {left:-2400px;}
+}
+
+.slide-images{
+    width: 6000px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
