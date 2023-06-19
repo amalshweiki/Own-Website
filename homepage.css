@@ -3,6 +3,7 @@ body{
     margin: 0;
     
     background: center url("5026563.jpg") ;
+    box-sizing: border-box;
 }
 
 h1{
@@ -12,7 +13,7 @@ h1{
     font-size: 80px;
     font-family: 'Karla', sans-serif;
     font-weight: lighter;
-    color: rgba(98, 91, 178, 0.805);
+    color: rgba(178, 143, 91, 0.986);
     font-style: italic;
     border: 2px solid rgba(135, 59, 59, 0.216);
     background-color: rgba(112, 68, 7, 0.275);
@@ -30,31 +31,31 @@ h1{
 
 
 @keyframes slide_animation{
-    0% {left:-2400px;}
-    10% {left:-1200px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: -1200px;}
-    90% {left: -1200px;}
-    100% {left:-2400px;}
+    0% {left: -2400px;}
+      10% {left: -1200px;}
+      20% {left:0px;}
+      30% {left:1200px;}
+      40% {left: 2400px;}
+      50% {left: 2400px;}
+      60% {left: 1200px;}
+      70% {left: 1200px;}
+      80% {left: 0px;}
+      90% {left: -1200;}
+      100% {left: -2400px;}
 }
 
 @-webkit-keyframes slide_animation{
-    0% {left:-2400px;}
-    10% {left:-1200px;}
-    20% {left:1200px;}
+    0% {left: -2400px;}
+    10% {left: -1200px;}
+    20% {left:0px;}
     30% {left:1200px;}
     40% {left: 2400px;}
     50% {left: 2400px;}
     60% {left: 1200px;}
     70% {left: 1200px;}
-    80% {left: -1200px;}
-    90% {left: -1200px;}
-    100% {left:-2400px;}
+    80% {left: 0px;}
+    90% {left: -1200;}
+    100% {left: -2400px;}
 }
 
 .slide-images{
@@ -102,7 +103,7 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color: rgb(185, 206, 224);
+    color: rgba(191, 182, 18, 0.538);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     transition: 0.4s ease-in-out;
@@ -111,5 +112,85 @@ ul li a{
 
 ul li a:hover
 {
-    color: rgb(59, 59, 133);
+    color: rgba(133, 107, 59, 0.955);
 }
+.split
+{
+    margin-top: 10%;
+    height: 80%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top:0 ;
+    overflow-x: hidden; 
+    padding-top: 20px;
+
+}
+.left{
+    left: 0;
+    background: #a78b3c;
+}
+.right{
+    right:  0;
+    background:#a78b3c;
+}
+.middle{
+    left: 30%;
+    background:transparent  ;
+
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.centered h2{
+    color: #4b487d;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+.centered p{
+    text-align: justify;
+    font-size: 16px;
+}
+.centered img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: cover;
+    border: 2px solid #fff;
+}
+#ourwork1{
+    margin-right: 0px;
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8%;
+    background-size: cover;
+    border: 2px solid #fff;
+   
+}
+#ourwork2{
+    width: 200px;
+    height: 200px;
+    border-radius: 8%;
+    background-size: cover;
+    border: 2px solid #fff;
+   
+}
+#ourwork3{
+    width: 200px;
+    height:200px;
+    border-radius: 8%;
+    background-size: cover;
+    border: 2px solid #fff;
+}
+.ourwork1{
+    margin-top: 200px;
+    
+}
+
